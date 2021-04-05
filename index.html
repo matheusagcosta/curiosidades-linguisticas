@@ -8,20 +8,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet"> 
   </head>
-
-  <body id="body__specs"> 
+  <body id="body__specs">
     <header class=header__specs>
-      <img class="share" src="image/wtsapp.png">
-      <img class="share" src="image/download.png">
+      <button class="share"> <img class="share__img--zap" src="image/wtsapp.svg"/> </button>
+      <button class="share"> <img class="share__img--down"src="image/download.svg"/> </button>
     </header>
     <main class="container">
       <h1 class="text">
         <span id="text--name"></span>
         <span id="text--content"></span>
       </h1>
-      <button onclick="newCuriosity()"> Nova Curiosidade </button>
     </main>
+    <div class="btn">
+    <button" onclick="newCuriosity()"> 
+      <p class="btn--style">Nova Curiosidade</p>
+      <p class="btn--plus"> + </p> 
+    </button>
+    </div>
   </body>
 
 </html>

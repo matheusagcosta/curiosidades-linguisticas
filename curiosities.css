@@ -1,0 +1,22 @@
+#body__specs{
+  position: relative;
+  max-width: 100%;
+  max-height: 1024px;
+  margin: 0;
+  padding: 0;
+}
+.container{
+
+}
+.text{
+  font-family: Rammetto One;
+  font-style: normal;
+  font-size: 30px;
+}
+#text--name{
+  background-color: black;
+  color: white;
+}
+#text--content{
+
+}

@@ -1,10 +1,10 @@
-#body__specs{
+#body{
   position: relative;
   max-width: 100%;
   max-height: 1024px;
   margin: 0;
   padding: 0;
-  background-color: blue;
+
 }
 .header{
   display: flex;
@@ -22,26 +22,28 @@
   padding: 35px;
   border: 0;
   margin-left: 20px;
-    cursor: pointer;
+  cursor: pointer;
 }
 .header__icon--zap{
   transform: translateY(-16px) translateX(-15px);
 }
-.header__icon--down{
-  transform: translateY(-16px) translateX(-12px);
+#header__icon--shot{
+  transform: translateY(-20px) translateX(-12px);
 }
-.container{
+#container{
   position: absolute;
-  display: flex;
   max-width: 1200px;
   max-height:1000px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   transform: translateX(400px);
 }
-.text{
-  font-family: Rammetto One;
+#text{
+  font-family: 'Rammetto One';
   font-style: normal;
   font-size: 30px;
   max-width: 1200px;
+  padding-left: 20px;
 }
 #text--name{
   background-color: black;
@@ -83,4 +85,22 @@
   height: 20px;
   cursor: pointer;
   transform: translateX(260px)translateY(-65px);
+}
+
+#screen__preview{
+  position: absolute;
+  background-color: black;
+  margin-left: 20%;
+  transform:translateY(-100px);
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  border: transparent;
+  max-height: 600px;
+  box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.75);
 }

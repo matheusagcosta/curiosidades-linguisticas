@@ -9,42 +9,30 @@ var contents = [
   "EEEE eeeeeee eeeeeeeeeeeeeeeee eeeeeeeeeeee eeeeeee eeeeee eeeeeeeeeee",
 ]
 
-window.onload = initPage
-function initPage(){
-  var calc = parseInt(Math.random() * 6 ) 
-  contentCalc = contents[calc]
-  backColorCalc = backColor[calc]
-  fontColorCalc = fontColor[calc]
+window.onload=randomCuriosity
 
-  var textName = document.getElementById("text--name").innerHTML=`${contentCalc.split(' ')[0]}`
-  var textContent = document.getElementById("text--content").innerHTML=`${contentCalc}`
-  var backGroundChange = document.getElementById("body").style.backgroundColor=`${backColorCalc}`
-  var fontChange = document.getElementById("text--content").style.color=`${fontColorCalc}`
+function newCuriosity(){ 
+  randomCuriosity()
 }
 
-function newCuriosity(){
+function randomCuriosity(){
   var calc = parseInt(Math.random() * 6 ) 
   contentCalc = contents[calc]
   backColorCalc = backColor[calc]
   fontColorCalc = fontColor[calc]
 
-  var textName = document.getElementById("text--name").innerHTML=`${contentCalc.split(' ')[0]}`
-  var textContent = document.getElementById("text--content").innerHTML=`${contentCalc}`
-  var backGroundChange = document.getElementById("body").style.backgroundColor=`${backColorCalc}`
-  var fontChange = document.getElementById("text--content").style.color=`${fontColorCalc}`
-  var backGroundChange = document.getElementById("container").style.backgroundColor=`${backColorCalc}`
-  
-}      
+  textName = document.getElementById("text--name").innerHTML=`${contentCalc.split(' ')[0]}`
+  textContent = document.getElementById("text--content").innerHTML=`${contentCalc}`
+  backGroundChange = document.getElementById("body").style.backgroundColor=`${backColorCalc}`
+  fontChange = document.getElementById("text--content").style.color=`${fontColorCalc}`
+  backGroundChange = document.getElementById("container").style.backgroundColor=`${backColorCalc}`
+}
 function takeShot(){
-  let div = document.getElementById("container")
-  html2canvas(div).then(
-  function(canvas){
-    document
-    .getElementById('screen__preview')
-    .appendChild(canvas)
-  var display = document.getElementById("screen__preview").style.display;
-  if (display == "none"){
-    document.getElementById("screen__preview").style.display = "block";
-  }
+    html2canvas(document.getElementById('container')).then( canvas => {
+    let url = canvas.toDataURL("image/png");
+    let screenDown = document.getElementById("screen__preview")
+    screenDown.href = url;
+    screenDown.click()
 })
 }
+

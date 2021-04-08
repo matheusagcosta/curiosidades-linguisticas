@@ -12,7 +12,7 @@
   justify-content: right;
   margin-top: 40px;
   margin-right: 60px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 .header__icon{
   width: 36px;
@@ -24,26 +24,26 @@
   margin-left: 20px;
   cursor: pointer;
 }
-.header__icon--zap{
+.header__icon--whatsapp{
   transform: translateY(-16px) translateX(-15px);
 }
-#header__icon--shot{
+#header__icon--download{
   transform: translateY(-20px) translateX(-12px);
 }
 #container{
-  position: absolute;
+  position: fixed;
   max-width: 1200px;
   max-height:1000px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  transform: translateX(400px);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 #text{
   font-family: 'Rammetto One';
   font-style: normal;
   font-size: 30px;
-  max-width: 1200px;
-  padding-left: 20px;
+  max-width: 900px;
 }
 #text--name{
   background-color: black;
@@ -53,7 +53,7 @@
   flex-direction: row;
   display: flex;
   position: static;
-  transform: translateY(450px);
+  transform: translateY(500px);
   margin-left: auto;
   margin-right: auto;
   width: 380px;
@@ -89,17 +89,13 @@
 
 #screen__preview{
   position: absolute;
-  background-color: black;
-  margin-left: 20%;
   transform:translateY(-100px);
-  justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px;
   border: transparent;
-  max-height: 600px;
   box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.75);

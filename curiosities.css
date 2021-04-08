@@ -34,16 +34,17 @@
   position: absolute;
   max-width: 1200px;
   max-height:1000px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  transform: translateX(400px);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 23%;
+  padding-right: 20%;
+  transform: translateY(-100px);
 }
 #text{
   font-family: 'Rammetto One';
   font-style: normal;
   font-size: 30px;
   max-width: 1200px;
-  padding-left: 20px;
 }
 #text--name{
   background-color: black;

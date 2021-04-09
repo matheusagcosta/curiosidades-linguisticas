@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>NoName</title>
+    <title>Curiosidades Linguisticas</title>
     <meta charset="utf-8">
     <link href="curiosities.css" type="text/css" rel="stylesheet">
     <script src="js/scripts.js"></script>
@@ -13,23 +13,24 @@
     <script src="js/html2canvas.min.js"></script>
   </head>
   <body id="body">
-    <header class=header>
-      <button class="header__icon"> <img class="header__icon--zap" src="image/wtsapp.svg"/> </button>
-      <button class="header__icon" onclick="takeShot()"> <img id="header__icon--shot" src="image/download.svg"></button>
+    <header class="header">
+      <button class="header__button"> 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="header__icon header__icon--zap" viewBox="0 0 33 33"><defs/><path d="M27.774 5.152A15.708 15.708 0 0016.56.5C7.826.5.708 7.616.7 16.352c0 2.798.732 5.52 2.114 7.93L.572 32.5l8.408-2.204a15.866 15.866 0 007.58 1.93h.008c8.736 0 15.852-7.116 15.86-15.86a15.796 15.796 0 00-4.656-11.214h.002zM16.56 29.542c-2.362 0-4.68-.635-6.712-1.84l-.48-.288-4.988 1.308 1.332-4.866-.312-.502a13.12 13.12 0 01-2.014-7.01c0-7.252 5.914-13.168 13.182-13.168a13.12 13.12 0 019.32 3.862 13.113 13.113 0 013.856 9.32c-.008 7.278-5.922 13.184-13.184 13.184zm7.23-9.868c-.394-.198-2.34-1.156-2.706-1.292-.364-.13-.63-.198-.89.198-.266.394-1.026 1.292-1.254 1.55-.228.266-.464.296-.86.1-.394-.2-1.672-.616-3.184-1.97-1.18-1.05-1.97-2.35-2.206-2.744-.228-.396-.022-.608.176-.806.174-.176.394-.464.592-.692.2-.228.266-.396.396-.66.13-.268.068-.496-.03-.694-.1-.198-.89-2.152-1.224-2.94-.32-.778-.646-.67-.89-.68-.228-.014-.494-.014-.76-.014a1.458 1.458 0 00-1.058.494c-.364.396-1.382 1.354-1.382 3.308 0 1.954 1.42 3.832 1.62 4.098.196.266 2.788 4.264 6.766 5.984.94.41 1.68.652 2.258.836.95.304 1.808.258 2.492.16.76-.116 2.342-.96 2.676-1.886.328-.928.328-1.72.228-1.886-.098-.168-.364-.266-.76-.464z"/></svg>
+      </button>
+      <button class="header__button" onclick="takeShot()"> 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="header__icon header__icon--shot" viewBox="0 0 25 33"><defs/><path d="M1.711 30.1h21.592a1.2 1.2 0 01.161 2.389l-.161.01H1.71a1.2 1.2 0 01-.163-2.389l.163-.01h21.592H1.71zM12.321.512L12.51.5a1.6 1.6 0 011.588 1.412l.011.188v20.139l5.27-5.268a1.6 1.6 0 012.11-.133l.151.135a1.6 1.6 0 01.133 2.111l-.133.15-7.993 7.992a1.6 1.6 0 01-2.112.134l-.15-.132-8.004-7.994a1.6 1.6 0 012.111-2.396l.15.133 5.268 5.26V2.1A1.6 1.6 0 0112.321.51L12.51.5l-.188.011z"/></svg>
+      </button>
     </header>
-    <div id="container">
-      <h1 id="text">
-        <span id="text--name"></span>
-        <span id="text--content"></span>
+    <div id="container" class="container">
+      <h1 class="container__text">
+        <span id="textName" class="container__name"></span>
+        <span id="textDesc" class="container__desc"></span>
       </h1>
     </div>
-    <div class="btn">
-    <button" onclick="newCuriosity()"> 
-      <span class="btn--style">Nova Curiosidade</span>
-      <span class="btn--plus"> + </span> 
+    <button" class="btn" onclick="newCuriosity()"> 
+      <span class="btn__text">Nova Curiosidade</span>
+      <span class="btn__icon"> + </span> 
     </button>
-    </div>
     <a href="#" id="screen__preview" download="screenshot.png" style="display: none;"></a>
   </body>
-
 </html>

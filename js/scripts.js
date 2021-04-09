@@ -21,11 +21,10 @@ function randomCuriosity(){
   backColorCalc = backColor[calc]
   fontColorCalc = fontColor[calc]
 
-  textName = document.getElementById("text--name").innerHTML=`${contentCalc.split(' ')[0]}`
-  textContent = document.getElementById("text--content").innerHTML=`${contentCalc}`
-  backGroundChange = document.getElementById("body").style.backgroundColor=`${backColorCalc}`
-  fontChange = document.getElementById("text--content").style.color=`${fontColorCalc}`
+  textName = document.getElementById("textName").innerHTML=`${contentCalc.split(' ')[0]}`
+  textContent = document.getElementById("textDesc").innerHTML=`${contentCalc}`
   backGroundChange = document.getElementById("container").style.backgroundColor=`${backColorCalc}`
+  fontChange = document.getElementById("textDesc").style.color=`${fontColorCalc}`
 }
 function takeShot(){
     html2canvas(document.getElementById('container')).then( canvas => {

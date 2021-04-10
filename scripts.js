@@ -27,6 +27,7 @@ function randomCuriosity(){
   fontChange = document.getElementById("text--content").style.color=`${fontColorCalc}`
   backGroundChange = document.getElementById("container").style.backgroundColor=`${backColorCalc}`
 }
+
 function takeShot(){
     html2canvas(document.getElementById('container')).then( canvas => {
     let url = canvas.toDataURL("image/png");

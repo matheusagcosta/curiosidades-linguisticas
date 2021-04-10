@@ -24,6 +24,7 @@
   margin-left: 20px;
   cursor: pointer;
 }
+<<<<<<< Updated upstream
 .header__icon--whatsapp{
   transform: translateY(-16px) translateX(-15px);
 }
@@ -31,6 +32,54 @@
   transform: translateY(-20px) translateX(-12px);
 }
 #container{
+=======
+
+.header__button:hover::before{
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+  border-bottom: solid 7px black;
+  content: '';
+  top:48px;
+  z-index: 1005;
+}
+
+.header__button:hover::after{
+  content: attr(data-tooltip-whatsapp) attr(data-tooltip-download);
+  top: 54px;
+  position: absolute;
+  background: black;
+  border-radius: 25px;
+  box-shadow: 1px 1px 10px rgba(9, 9, 9, 0.55);
+  color: #FFF;
+  font-weight: bold;
+  min-width: 60px;
+  padding: 15px;
+  white-space: nowrap;
+}
+
+.header__button:not(:first-of-type) {
+  margin-left: 20px;
+}
+
+.header__icon {
+  fill: white;
+  height: 24px;
+  width: 24px;
+}
+
+.header__icon:hover {
+  fill: gray;
+
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 200px 50px;
+>>>>>>> Stashed changes
   position: fixed;
   max-width: 1200px;
   max-height:1000px;

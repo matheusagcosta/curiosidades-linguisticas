@@ -3,7 +3,8 @@
 .swp
 .vscode
 .yarn-integrity
+.cache/
+dist/
+node_modules/
 yarn-debug.log*
-node_modules
-dist
 yarn-error.log

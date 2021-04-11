@@ -1,4 +1,5 @@
 Arguments: 
+<<<<<<< HEAD
   /Users/matheusagcosta/.nvm/versions/node/v10.16.3/bin/node /usr/local/Cellar/yarn/1.22.5/libexec/bin/yarn.js add html2canvas.min
 
 PATH: 
@@ -21,6 +22,30 @@ Trace:
       at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.5/libexec/lib/cli.js:141721:10)
       at Request.emit (events.js:198:13)
       at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.5/libexec/lib/cli.js:141643:12)
+=======
+  /usr/bin/node /usr/local/bin/yarn add data.json
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  10.19.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/data.json: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141556:12)
+>>>>>>> aa
       at Object.onceWrapper (events.js:286:20)
       at IncomingMessage.emit (events.js:203:15)
       at endReadableNT (_stream_readable.js:1145:12)
@@ -30,6 +55,7 @@ npm manifest:
   {
     "name": "curiosidades",
     "version": "1.0.0",
+<<<<<<< HEAD
     "main": "index.js",
     "repository": "git@github.com:matheusagcosta/curiosidades-linguisticas.git",
     "author": "PinhoOn <pinhoonjob@gmail.com>",
@@ -44,6 +70,15 @@ npm manifest:
     },
     "dependencies": {
       "html2canvas": "^1.0.0-rc.7"
+=======
+    "main": "js/scripts.js",
+    "repository": "git@github.com:matheusagcosta/curiosidades-linguisticas.git",
+    "author": "PinhoOn <pinhoonjob@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+      "parcel-bundler": "^1.12.5",
+      "pug": "^3.0.2"
+>>>>>>> aa
     }
   }
 
@@ -1238,11 +1273,14 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
     integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
   
+<<<<<<< HEAD
   base64-arraybuffer@^0.2.0:
     version "0.2.0"
     resolved "https://registry.yarnpkg.com/base64-arraybuffer/-/base64-arraybuffer-0.2.0.tgz#4b944fac0191aa5907afe2d8c999ccc57ce80f45"
     integrity sha512-7emyCsu1/xiBXgQZrscw/8KPRT44I4Yq9Pe6EGs3aPRTsWuggML1/1DTuZUuIaJPIm1FTDUVXl4x/yW8s0kQDQ==
   
+=======
+>>>>>>> aa
   base64-js@^1.0.2:
     version "1.5.1"
     resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
@@ -1820,6 +1858,7 @@ Lockfile:
       postcss "^7.0.1"
       timsort "^0.3.0"
   
+<<<<<<< HEAD
   css-line-break@1.1.1:
     version "1.1.1"
     resolved "https://registry.yarnpkg.com/css-line-break/-/css-line-break-1.1.1.tgz#d5e9bdd297840099eb0503c7310fd34927a026ef"
@@ -1827,6 +1866,8 @@ Lockfile:
     dependencies:
       base64-arraybuffer "^0.2.0"
   
+=======
+>>>>>>> aa
   css-modules-loader-core@^1.1.0:
     version "1.1.0"
     resolved "https://registry.yarnpkg.com/css-modules-loader-core/-/css-modules-loader-core-1.1.0.tgz#5908668294a1becd261ae0a4ce21b0b551f21d16"
@@ -2709,6 +2750,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-1.2.0.tgz#c78de65b5663aa597989dd2b7ab49200d7e4db98"
     integrity sha1-x43mW1Zjqll5id0rerSSANfk25g=
   
+<<<<<<< HEAD
   html2canvas@^1.0.0-rc.7:
     version "1.0.0-rc.7"
     resolved "https://registry.yarnpkg.com/html2canvas/-/html2canvas-1.0.0-rc.7.tgz#70c159ce0e63954a91169531894d08ad5627ac98"
@@ -2716,6 +2758,8 @@ Lockfile:
     dependencies:
       css-line-break "1.1.1"
   
+=======
+>>>>>>> aa
   htmlnano@^0.2.2:
     version "0.2.8"
     resolved "https://registry.yarnpkg.com/htmlnano/-/htmlnano-0.2.8.tgz#d9c22daa18c8ea7675a0bf07cc904793ccaeb56f"

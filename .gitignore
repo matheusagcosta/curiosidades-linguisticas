@@ -1,0 +1,9 @@
+.DS_Store
+.swo
+.swp
+.vscode
+.yarn-integrity
+yarn-debug.log*
+node_modules
+dist
+yarn-error.log

@@ -1,0 +1,46 @@
+.effect {
+  border-radius: 10px;
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  bottom: 50px;
+  left: 40%;
+  transition: all 0.3s linear 0s;
+}
+
+.effect-3 {
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  margin-top: -3px;
+  max-width: 340px;
+  padding: 30px 190px 30px 170px;
+  top: 0px;
+  transition: all 0.3s linear 0s;
+
+  &:before {
+    color: white;
+    content: attr(data-btntext);
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 25px;
+    display: flex;
+    text-indent: -9999px;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    font-size: 30px;
+    transition: all 0.3s linear 0s;
+    
+  }
+  
+  &:hover {
+    text-indent: -9999px;
+    
+    &:before {
+      top: 0;
+      text-indent: 0;
+    }
+  }
+}

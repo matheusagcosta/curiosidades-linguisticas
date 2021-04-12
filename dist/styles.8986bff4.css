@@ -39,12 +39,12 @@ body {
   padding: 10px;
 }
 .header__button:hover::after{
-  content: attr(data-tooltip-whatsapp) attr(data-tooltip-download);
-  top: 50px;
-  position: absolute;
   border-radius: 10px;
-  font-size: 15px;
   color: black;
+  content: attr(data-tooltip-whatsapp) attr(data-tooltip-download);
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
 }
 .header__button:not(:first-of-type) {
   margin-left: 20px;
@@ -61,13 +61,13 @@ body {
 }
 
 .container {
-  justify-content: center;
   height: 100%;
-  width: 100%;
+  justify-content: center;
+  left: 0;
   padding: 200px 50px;
   position: fixed;
   top: 0;
-  left: 0;
+  width: 100%;
   z-index: 1;
 }
 
@@ -77,44 +77,71 @@ body {
   font-size: 30px;
   max-width: 1200px;
   margin: auto;
-  margin-top:160px;
+  margin-top:140px;
 }
 
 .container__name {
   background-color: black;
   color: white;
+  padding: 0 10px;
 }
 
-.btn {
+.effect {
   align-items: center;
   background-color: black;
-  border-radius: 50px;
+  border:none;
+  border-radius: 5px;
   bottom: 50px;
-  color: white;
   cursor: pointer;
-  display: flex;
-  position: fixed;
+  height: 80px;
   left: 0;
   margin: auto;
-  max-width: 320px;
+  max-width: 340px;
+  position: absolute;
+  transition: all 0.3s;
   right: 0;
-  height: 80px;
   z-index: 10;
 }
 
-
-.btn__text {
-  border-color: transparent;
-  display: flex;
-  font-family: 'Sawarabi Gothic';
-  font-size: 26px;
-  padding: 24px 10px 24px 40px;
+.effect.effect-3 {
+  transition: all 0.2s linear 0s;
+  
+  &:before {
+    content: "\f178";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+    transition: all 0.2s linear 0s;
+  }
+  
+  &:hover {
+    text-indent: -9999px;
+    
+    &:before {
+      top: 0;
+      text-indent: 0;
+    }
+  }
 }
 
 .btn__icon {
-  width: 35px;
+  display: inline-block;
   height: auto;
+  margin: 0 20px;
+  width: 32px;
 }
+
+
+
+
 
 
 /*# sourceMappingURL=/styles.8986bff4.css.map */

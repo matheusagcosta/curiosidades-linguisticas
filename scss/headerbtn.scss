@@ -7,25 +7,58 @@
   display: flex;
   justify-content: center;
   padding: 10px;
+  z-index: 10;
 }
-.header__button:hover::after{
-  border-radius: 10px;
-  color: black;
-  content: attr(data-tooltip-whatsapp) attr(data-tooltip-download);
-  font-size: 15px;
-  position: absolute;
-  top: 50px;
+.header__button:not(:first-of-type){
+  margin-left: 10px;
 }
-.header__button:not(:first-of-type) {
-  margin-left: 20px;
+.header__button--effect {
+  transition: all 0.2s linear 0s;
+  
+  &:before {
+    content:"";
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 0px;
+    height: 100%;
+    background-color: black;
+    transition: all 0.2s linear 0s;
+    visibility: hidden;
+  }
+  
+  &:hover {
+    text-indent: 1px;
+    
+    &:before {
+      position: relative;
+      color: white;
+      font-size: 15px;
+      content: attr(data-tooltip-whatsapp) attr(data-tooltip-download) attr(data-tooltip-send);
+      visibility: visible;
+      width: 150px;
+      max-height: 50px;
+      text-indent: 0px;
+      overflow: hidden;
+      text-align: center;
+      transition: all 0.2;
+    }
+  }
 }
 
 .header__icon {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
   fill: white;
   height: 24px;
   width: 24px;
+  overflow: hidden;
+  z-index: 9;
 }
 
 .header__icon:hover {
-  fill: gray;
+  fill: red;
 }

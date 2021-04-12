@@ -12,10 +12,11 @@ export function randomCuriosity() {
     "O <span class='container__name'>Horário Oficial</span> surgiu a partir dos relógios das estações ferroviárias."
   ]
 
-  var totalCalc = parseInt(Math.random() * contents.length)
-  var backColorCalc = backColor[totalCalc]
-  var fontColorCalc = fontColor[totalCalc]
-  var contentCalc = contents[totalCalc]
+  var colorCalc = parseInt(Math.random() * backColor.length)
+  var textCalc = parseInt(Math.random() * contents.length)
+  var backColorCalc = backColor[colorCalc]
+  var fontColorCalc = fontColor[colorCalc]
+  var contentCalc = contents[textCalc]
 
   document.getElementById("textDesc").innerHTML=`${contentCalc}`
   document.getElementById("container").style.backgroundColor=`${backColorCalc}`
@@ -23,4 +24,3 @@ export function randomCuriosity() {
 
   return;
 }
-window.onload = randomCuriosity()

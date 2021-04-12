@@ -17,16 +17,15 @@
   
   &:before {
     content:"";
-    border-radius: 50px;
+    border-radius: 50px 0 0 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 0px;
+    width: 0;
     height: 100%;
-    background-color: black;
+    background-color: rgb(39, 34, 34);
     transition: all 0.2s linear 0s;
-    visibility: hidden;
   }
   
   &:hover {
@@ -39,8 +38,8 @@
       content: attr(data-tooltip-whatsapp) attr(data-tooltip-download) attr(data-tooltip-send);
       visibility: visible;
       width: 150px;
-      max-height: 50px;
-      text-indent: 0px;
+      max-height: 24px;
+      text-indent: 0;
       overflow: hidden;
       text-align: center;
       transition: all 0.2;
@@ -55,10 +54,5 @@
   fill: white;
   height: 24px;
   width: 24px;
-  overflow: hidden;
   z-index: 9;
-}
-
-.header__icon:hover {
-  fill: red;
 }

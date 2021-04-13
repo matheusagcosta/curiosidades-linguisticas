@@ -1,3 +1,35 @@
+@media screen and (max-width:700px){
+  .header__button{
+    padding: 15px;
+  }
+  .header__button:not(:first-of-type){
+    margin-left: 10px;
+  }
+  .header__icon{
+    width: 20px;
+    height: 20px;
+  }
+  .header__button--effect{
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width:700px){
+  .header__button{
+    padding: 24px;
+  }
+  .header__button:not(:first-of-type){
+    margin-left: 25px;
+  }
+  .header__icon{
+    height: 30px;
+    width: 32px;
+  }
+  .header__button--effect{
+    font-size: 26px;
+  }
+}
+
 .header__button {
   align-items: center;
   background-color: black;
@@ -7,14 +39,11 @@
   display: flex;
   position: relative;
   justify-content: center;
-  padding: 24px;
   z-index: 10;
   top: 41px;
   transition: all 0.2s linear 0s;
 }
-.header__button:not(:first-of-type){
-  margin-left: 25px;
-}
+
 .header__button--effect {
   transition: all 0.2s linear 0s;
   
@@ -32,7 +61,6 @@
       color: white;
       content: attr(data-tooltip-whatsapp) attr(data-tooltip-download) attr(data-tooltip-send);
       border-radius: 50px 0 0 50px;
-      font-size: 26px;
       max-height: 32px;
       height: 100%;
       position: relative;
@@ -48,11 +76,8 @@
 }
 
 .header__icon {
-
   background-color: black;
   position: relative;
   fill: white;
-  height: 32px;
-  width: 32px;
   z-index: 9;
 }

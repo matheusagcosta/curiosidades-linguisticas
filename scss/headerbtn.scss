@@ -5,54 +5,54 @@
   border: 0;
   cursor: pointer;
   display: flex;
+  position: relative;
   justify-content: center;
-  padding: 10px;
+  padding: 24px;
   z-index: 10;
+  top: 41px;
+  transition: all 0.2s linear 0s;
 }
 .header__button:not(:first-of-type){
-  margin-left: 10px;
+  margin-left: 25px;
 }
 .header__button--effect {
   transition: all 0.2s linear 0s;
   
   &:before {
     content:"";
-    border-radius: 50px 0 0 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 0;
-    height: 100%;
-    background-color: rgb(39, 34, 34);
     transition: all 0.2s linear 0s;
   }
   
   &:hover {
     text-indent: 1px;
+    transition: all 0.2s linear 0s;
     
     &:before {
-      position: relative;
+      display: flex;
       color: white;
-      font-size: 15px;
       content: attr(data-tooltip-whatsapp) attr(data-tooltip-download) attr(data-tooltip-send);
-      visibility: visible;
-      width: 150px;
-      max-height: 24px;
+      border-radius: 50px 0 0 50px;
+      font-size: 26px;
+      max-height: 32px;
+      height: 100%;
+      position: relative;
+      align-items: center;
+      justify-content: center;
       text-indent: 0;
-      overflow: hidden;
-      text-align: center;
-      transition: all 0.2;
+      transition: all 0.2 linear 0s;
+      padding-right: 10px;
+      visibility: visible;
+      width: auto;
     }
   }
 }
 
 .header__icon {
-  overflow: hidden;
+
   background-color: black;
   position: relative;
   fill: white;
-  height: 24px;
-  width: 24px;
+  height: 32px;
+  width: 32px;
   z-index: 9;
 }

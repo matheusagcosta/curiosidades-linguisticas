@@ -1,0 +1,63 @@
+.footer {
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  margin: auto;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+  
+  &__button {
+    background-color: black;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    top: 0px;
+    width: 311px;
+    overflow: hidden;
+    padding: 24px;
+    position: relative;
+    height: 69px;
+    transition: all 0.3s linear 0s;
+  }
+
+  &__button:before {
+    color: white;
+    content: attr(data-btntext);
+    padding: 17.5px 0px 15.5px 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    text-indent: 0px;
+    width: 100%;
+    font-size: 26px;
+    transition: all 0.3s linear 0s;
+  }
+    
+  &__button:hover {
+    text-indent: -220px;
+  }
+  
+  &__button:hover:before {
+    text-indent: -500px;
+  }
+    
+  &__icon {
+    height: 27.71px;
+    position: absolute;
+    right: 20px;
+    text-indent: 0;
+    top: 20px;
+    transform: translateX(0);
+    transition: all 0.3s linear 0s;
+    width: 32px;
+    z-index: 10;
+
+    .footer__button:hover & {
+      transform: translateX(-400%);
+    }
+  }
+}

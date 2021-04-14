@@ -15,6 +15,10 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
+    "container": "^0.0.2",
+    "footer": "^1.0.0",
+    "global": "^4.4.0",
+    "header": "^0.1.1",
     "html2canvas": "^1.0.0-rc.7"
   }
 }

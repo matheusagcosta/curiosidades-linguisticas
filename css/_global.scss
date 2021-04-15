@@ -17,3 +17,24 @@ body {
   position: relative;
 }
 
+svg {
+  @media screen and (min-width:701px) {
+    height: 32px;
+    width: 32px;
+  }
+  
+  @media screen and (max-width:700px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+button {
+  @media screen and (min-width:701px) {
+    font-size: 26px;
+  }
+
+  @media screen and (max-width:700px) {
+    font-size: 16px;
+  }
+}

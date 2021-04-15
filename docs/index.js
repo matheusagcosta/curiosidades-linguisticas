@@ -212,6 +212,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
+<<<<<<< HEAD
 <<<<<<< HEAD:dist/index.js
 <<<<<<< HEAD
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "44551" + '/');
@@ -221,6 +222,9 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
 =======
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "50220" + '/');
 >>>>>>> b13a27e... Fix scripts to make it work with Github Pags:docs/index.js
+=======
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49570" + '/');
+>>>>>>> 7403f0c... Small improvements on media queries
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -119,7 +119,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"data.json":[function(require,module,exports) {
 module.exports = {
-  "contents": ["Banguela surgiu dos escravos africanos que vinham da região de Benguela na Angola e arrancavam os seus dentes para identificação na hora da venda.", "Rir até o século XVII, era considerado um dom divino, do qual só o homem tinha acesso: através do riso se espantava os maus espíritos. Para o filósofo grego Aristóteles, a criança só se tornava um ser humano depois que aprendia a rir.", "Baderna era sobrenome de uma bailarina italiana que conhecia passos de danças africanas. Ao chegar no Brasil e se apresentar em espetáculos, chocou a elite com sua dança e seu sobrenome passou a ser sinônimo de desordem.", "Colorado apelido do time gaúcho Internacional foi pejorativamente usado na época por ter sido um dos primeiros a aceitarem africanos. Apesar de serem chamados assim por conta do tom escuro da pele dos jogadores, o clube adotou e transformou em motivo de orgulho.", "Nostalgia era considerada uma doença física no século XVII e o sintoma principal era uma enorme vontade de voltar para a terra natal. Somente em 1940 ela passou a ser compreendida como algo psicológico.", "ketchup assim como o leite condensado, foram vendidos como medicamentos nos seus lançamentos.", "Horário Oficial surgiu a partir dos relógios das estações ferroviárias."]
+  "contents": ["A palavra <span class='container__name'>Banguela</span> surgiu dos escravos africanos que vinham da região de Benguela na Angola e arrancavam os seus dentes para identificação na hora da venda.", "O <span class='container__name'>Riso</span> até o século XVII, era considerado um dom divino, do qual só o homem tinha acesso: através do riso se espantava os maus espíritos. Para o filósofo grego Aristóteles, a criança só se tornava um ser humano depois que aprendia a rir.", "<span class='container__name'>Baderna</span> era sobrenome de uma bailarina italiana que conhecia passos de danças africanas. Ao chegar no Brasil e se apresentar em espetáculos, chocou a elite com sua dança e seu sobrenome passou a ser sinônimo de desordem.", "O apelido <span class='container__name'>Colorado</span> do time gaúcho Internacional foi pejorativamente usado na época por ter sido um dos primeiros a aceitarem africanos. Apesar de serem chamados assim por conta do tom escuro da pele dos jogadores, o clube adotou e transformou em motivo de orgulho.", "<span class='container__name'>Nostalgia</span> era considerada uma doença física no século XVII e o sintoma principal era uma enorme vontade de voltar para a terra natal. Somente em 1940 ela passou a ser compreendida como algo psicológico.", "<span class='container__name'>Ketchup</span> assim como o leite condensado, foram vendidos como medicamentos nos seus lançamentos.", "O <span class='container__name'>Horário Oficial</span> surgiu a partir dos relógios das estações ferroviárias."]
 };
 },{}],"js/randomCuriosity.js":[function(require,module,exports) {
 "use strict";
@@ -9113,19 +9113,33 @@ function takeShot() {
     screenDown.click();
   });
 }
-},{"html2canvas":"node_modules/html2canvas/dist/html2canvas.js"}],"index.js":[function(require,module,exports) {
+},{"html2canvas":"node_modules/html2canvas/dist/html2canvas.js"}],"js/share.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.share = share;
+
+function share() {
+  window.open('https://api.whatsapp.com/send?text=' + document.getElementById("textDesc").innerText + ' ' + 'Mais curiosidades em: https://matheusagcosta.github.io/curiosidades-linguisticas/');
+}
+},{}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _randomCuriosity = require("./js/randomCuriosity");
 
 var _takeShot = require("./js/takeShot");
 
+var _share = require("./js/share");
+
 document.querySelector('#newCuriosity').addEventListener('click', _randomCuriosity.randomCuriosity);
 document.querySelector('#takeShot').addEventListener('click', _takeShot.takeShot);
+document.querySelector('#share').addEventListener('click', _share.share);
 document.addEventListener("DOMContentLoaded", function () {
   (0, _randomCuriosity.randomCuriosity)();
 });
-},{"./js/randomCuriosity":"js/randomCuriosity.js","./js/takeShot":"js/takeShot.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./js/randomCuriosity":"js/randomCuriosity.js","./js/takeShot":"js/takeShot.js","./js/share":"js/share.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -9153,7 +9167,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50110" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52996" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

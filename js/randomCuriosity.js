@@ -1,6 +1,5 @@
 import { contents } from "../data/contents.json"
-import { backColor } from "../data/colors.json"
-import { fontColor } from "../data/colors.json"
+import { backColor, fontColor } from "../data/colors.json"
 
 export function randomCuriosity() {
   var colorCalc = parseInt(Math.random() * backColor.length)

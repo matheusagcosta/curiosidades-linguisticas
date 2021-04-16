@@ -67,6 +67,8 @@ a {
 .header__button {
   align-items: center;
   border-radius: 50px;
+  background-color: black;
+  color: white;
   border: 0;
   cursor: pointer;
   display: flex;
@@ -123,6 +125,7 @@ a {
 .header__button--effect:hover:before {
   align-items: center;
   border-radius: 50px 0 0 50px;
+  color: white;
   content: attr(data-tooltip-whatsapp) attr(data-tooltip-download) attr(data-tooltip-send);
   display: flex;
   height: 100%;
@@ -137,6 +140,7 @@ a {
   width: auto;
 }
 .header__icon {
+  background-color: black;
   fill: white;
   position: relative;
   z-index: 9;
@@ -153,6 +157,7 @@ a {
   z-index: 10;
 }
 .footer__button {
+  background-color: black;
   border-radius: 50px;
   border: 0;
   cursor: pointer;
@@ -178,6 +183,7 @@ a {
 .footer__button:before {
   bottom: 0;
   content: attr(data-btntext);
+  color: white;
   display: flex;
   left: 0;
   margin: auto;
@@ -253,24 +259,10 @@ a {
   }
 }
 .container__name {
+  color: white;
+  background-color: black;
   padding: 0 10px;
 }
-button {
-  background-color: black;
-  color: white;
-}
-
-a {
-  background-color: black;
-  color: white;
-}
-
-.container__name {
-  color: white;
-  background-color: black;
-}
-
-
 
 
 

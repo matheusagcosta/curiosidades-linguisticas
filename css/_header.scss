@@ -1,3 +1,4 @@
+@import './_colors.scss';
 .header {
   display: flex;
   flex-direction: row;
@@ -9,6 +10,8 @@
   &__button {
     align-items: center;
     border-radius: 50px;
+    background-color: $dark-color;
+    color: $light-color;
     border: 0;
     cursor: pointer;
     display: flex;
@@ -66,6 +69,7 @@
   &__button--effect:hover:before {
     align-items: center;
     border-radius: 50px 0 0 50px;
+    color: $light-color;
     content: attr(data-tooltip-whatsapp) attr(data-tooltip-download) attr(data-tooltip-send);
     display: flex;
     height: 100%;
@@ -81,6 +85,7 @@
   }
   
   &__icon {
+    background-color: $dark-color;
     fill: white;
     position: relative;
     z-index: 9;

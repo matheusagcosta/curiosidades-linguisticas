@@ -10,7 +10,6 @@
   z-index: 10;
   
   &__button {
-    background-color: black;
     border-radius: 50px;
     border: 0;
     cursor: pointer;
@@ -34,7 +33,6 @@
 
   &__button:before {
     bottom: 0;
-    color: white;
     content: attr(data-btntext);
     display: flex;
     left: 0;

@@ -15,4 +15,4 @@ var A,e=arguments[3];function t(A){return(t="function"==typeof Symbol&&"symbol"=
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=require("./js/randomCuriosity"),t=require("./js/takeShot"),r=require("./js/share");document.querySelector("#newCuriosity").addEventListener("click",e.randomCuriosity),document.querySelector("#takeShot").addEventListener("click",t.takeShot),document.querySelector("#share").addEventListener("click",r.share),document.addEventListener("DOMContentLoaded",function(){(0,e.randomCuriosity)()});
 },{"./js/randomCuriosity":"o1vZ","./js/takeShot":"F69i","./js/share":"BNiz"}]},{},["Focm"], null)
-//# sourceMappingURL=/curiosidades-linguisticas.67569b21.js.map
+//# sourceMappingURL=curiosidades-linguisticas.67569b21.js.map

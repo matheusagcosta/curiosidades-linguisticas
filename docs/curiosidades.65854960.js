@@ -3,7 +3,7 @@ module.exports={contents:["A palavra <span class='container__name'>Banguela</spa
 },{}],"NgwH":[function(require,module,exports) {
 module.exports={backColor:["#833E3E","#3E4D83","#50833E","#793E83","#3E8383","#837C3E","#764E29","#A64B81","#7D7D7D"],fontColor:["#D6DDA8","#DDA8B2","#A8D0DD","#BFDDA8","#D6A8DD","#FFAAAA","#DCDDA8","#A8DDDA","#F6F8C3"]};
 },{}],"o1vZ":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.randomCuriosity=o;var t=require("../data/contents.json"),e=require("../data/colors.json");function o(){var o=parseInt(Math.random()*e.backColor.length),n=parseInt(Math.random()*t.contents.length),r=e.backColor[o],c=e.fontColor[o],a=t.contents[n];document.getElementById("textDesc").innerHTML="".concat(a),document.getElementById("container").style.backgroundColor="".concat(r),document.getElementById("textDesc").style.color="".concat(c)}
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.randomCuriosity=o;var t=require("../data/contents.json"),e=require("../data/colors.json");function o(){var o=parseInt(Math.random()*e.backColor.length),n=parseInt(Math.random()*t.contents.length),r=e.backColor[o],c=e.fontColor[o],a=t.contents[n];t.contents.splice(a,1),document.getElementById("textDesc").innerHTML="".concat(a),document.getElementById("container").style.backgroundColor="".concat(r),document.getElementById("textDesc").style.color="".concat(c)}
 },{"../data/contents.json":"nEBD","../data/colors.json":"NgwH"}],"NLGZ":[function(require,module,exports) {
 var define;
 var global = arguments[3];
@@ -15,4 +15,4 @@ var A,e=arguments[3];function t(A){return(t="function"==typeof Symbol&&"symbol"=
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=require("./js/randomCuriosity"),t=require("./js/takeShot"),r=require("./js/share");document.querySelector("#newCuriosity").addEventListener("click",e.randomCuriosity),document.querySelector("#takeShot").addEventListener("click",t.takeShot),document.querySelector("#share").addEventListener("click",r.share),document.addEventListener("DOMContentLoaded",function(){(0,e.randomCuriosity)()});
 },{"./js/randomCuriosity":"o1vZ","./js/takeShot":"F69i","./js/share":"BNiz"}]},{},["Focm"], null)
-//# sourceMappingURL=curiosidades-linguisticas.67569b21.js.map
+//# sourceMappingURL=curiosidades.65854960.js.map

@@ -1,4 +1,3 @@
-@import './_colors.scss';
 .header {
   display: flex;
   flex-direction: row;
@@ -86,7 +85,7 @@
   
   &__icon {
     background-color: $dark-color;
-    fill: white;
+    fill: $light-color;
     position: relative;
     z-index: 9;
   }

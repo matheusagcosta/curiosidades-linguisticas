@@ -8,10 +8,11 @@ export function randomCuriosity() {
   var backColorCalc = backColor[colorCalc]
   var fontColorCalc = fontColor[colorCalc]
   var contentCalc = contents[textCalc]
-  
+
   document.getElementById("textDesc").innerHTML=`${contentCalc}`
   document.getElementById("container").style.backgroundColor=`${backColorCalc}`
   document.getElementById("textDesc").style.color=`${fontColorCalc}`
 
   return;
 }
+
